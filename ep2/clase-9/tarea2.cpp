@@ -5,11 +5,11 @@ using namespace std;
 
 int main() {
 	
-	int x = 0;
+	int x = 100;
 	
-	while(x <= 10) {
+	while(x > 0) {
 		cout << "X: " << x << endl;
-		x++;
+		x--;
 	}
 	
 	system("PAUSE");
