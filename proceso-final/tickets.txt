@@ -1,0 +1,12 @@
+
+====================================
+           COMPROBANTE
+====================================
+Numero de ticket: 1
+Cuenta: 1001
+Titular: JuanPerez
+Operacion: RETIRO
+Monto: Gs. 100000
+Saldo anterior: Gs. 500000
+Saldo actual: Gs. 400000
+====================================
