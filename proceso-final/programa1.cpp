@@ -182,6 +182,10 @@ void depositar() {
         cout << "\nEl monto debe ser mayor a cero.\n";
         return;
     }
+    if ((long)monto % 50000 != 0) {
+        cout << "\nSolo se aceptan billetes de Gs. 50.000 y 100.000 (multiplos de 50.000).\n";
+        return;
+    }
 
     double saldoAnterior = usuarioActual.saldo;
     usuarioActual.saldo += monto;
@@ -202,6 +206,10 @@ void retirar() {
 
     if (monto <= 0) {
         cout << "\nEl monto debe ser mayor a cero.\n";
+        return;
+    }
+    if ((long)monto % 50000 != 0) {
+        cout << "\nSolo se aceptan billetes de Gs. 50.000 y 100.000 (multiplos de 50.000).\n";
         return;
     }
     if (monto > usuarioActual.saldo) {
